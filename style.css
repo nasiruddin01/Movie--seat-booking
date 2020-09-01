@@ -51,6 +51,7 @@ body .text span {
   font-family: 'Lato', sans-serif;
   margin: 0 5rem 0rem 5rem;
   border-radius: 5px;
+  margin: auto;
 }
 
 .main-container .movie-container {
