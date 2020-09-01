@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato&family=Michroma&display=swap");
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+body h1 {
+  text-align: center;
+  font-family: 'Michroma', sans-serif;
+  font-weight: 800;
+  text-transform: uppercase;
+  word-spacing: 1rem;
+}
+
+body .text span {
+  color: #f8f8f8;
+  margin: 0 10px;
+  background: #9399ff;
+  padding: 0 3px;
+}
+
+.copy-right {
+  font-size: 1rem;
+  color: #1b262c;
+  font-family: 'Lato', sans-serif;
+  font-weight: bold;
+  padding-top: 2rem;
+}
+
+.main-container {
+  background-color: #bbe1fa;
+  opacity: 0.9;
+  color: #1b262c;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Lato', sans-serif;
+  margin: 0 5rem 0rem 5rem;
+  border-radius: 5px;
+}
+
+.main-container .movie-container {
+  margin: 20px 0;
+}
+
+.main-container .movie-container select {
+  background-color: #f09ae9;
+  border: 0;
+  border-radius: 5px;
+  margin-left: 10px;
+  padding: 5px 15px 5px 15px;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.main-container .showcase {
+  background-color: #9399ff;
+  color: #f8f8f8;
+  border-radius: 5px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1.5fr 2fr;
+      grid-template-columns: 1fr 1.5fr 2fr;
+  grid-gap: 1rem;
+  padding-right: 0.5rem;
+}
+
+.main-container .showcase div {
+  list-style: none;
+  margin: 1rem;
+}
+
+.main-container .showcase div div {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr auto;
+      grid-template-columns: 1fr auto;
+  grid-gap: 5px;
+  margin: 0;
+  height: 24px;
+  width: 30px;
+  border-radius: 30%;
+}
+
+.main-container .showcase div div .selected {
+  background-color: #61d4b3 !important;
+  height: 24px;
+  width: 30px;
+  border-radius: 30%;
+}
+
+.main-container .showcase div div .selected img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container .showcase div div .not-select .seat:not(.occupied):hover {
+  cursor: default;
+  -webkit-transform: scale(1);
+          transform: scale(1);
+}
+
+.main-container .showcase div div :not(.occupied):hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+
+.main-container .showcase div div .occupied {
+  background: #ff80b0 !important;
+  height: 24px;
+  width: 30px;
+  border-radius: 30%;
+}
+
+.main-container .showcase div div .occupied img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container .showcase div div .seat {
+  background-color: #FFFFFF;
+}
+
+.main-container .showcase div div img {
+  height: 100%;
+  width: 100%;
+}
+
+.main-container .showcase div small {
+  margin-top: 2px;
+  color: #f8f8f8;
+}
+
+.container {
+  -webkit-perspective: 1000px;
+          perspective: 1000px;
+  margin-bottom: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.container .screen {
+  background: #f7f7f7;
+  height: 70px;
+  width: 100%;
+  margin: 15px 0;
+  -webkit-transform: rotateX(-45deg);
+          transform: rotateX(-45deg);
+  -webkit-box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+          box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
+}
+
+.container .row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.container .row .selected {
+  background-color: #61d4b3 !important;
+}
+
+.container .row .occupied {
+  background-color: #ff80b0 !important;
+}
+
+.container .row .seat {
+  background-image: url("seat.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-color: #FFFFFF;
+  background-size: contain;
+  opacity: 0.6;
+  height: 24px;
+  width: 30px;
+  margin-bottom: 4px;
+  margin-right: 4px;
+  border-radius: 4px;
+  padding: 2px;
+}
+
+.container .row :not(.occupied):hover {
+  cursor: pointer;
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+/*# sourceMappingURL=style.css.map */
