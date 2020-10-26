@@ -4,9 +4,16 @@ body {
   margin: 0;
   padding: 0;
   text-align: center;
+  width: 1200px;
+  margin: 0 auto;
 }
 
-body h1 {
+body .main {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+body .main h1 {
   text-align: center;
   font-family: 'Michroma', sans-serif;
   font-weight: 800;
@@ -14,14 +21,14 @@ body h1 {
   word-spacing: 1rem;
 }
 
-body .text span {
+body .main .text span {
   color: #f8f8f8;
   margin: 0 10px;
   background: #9399ff;
   padding: 0 3px;
 }
 
-.copy-right {
+body .copy-right {
   font-size: 1rem;
   color: #1b262c;
   font-family: 'Lato', sans-serif;
@@ -29,7 +36,7 @@ body .text span {
   padding-top: 2rem;
 }
 
-.main-container {
+body .main-container {
   background-color: #bbe1fa;
   opacity: 0.9;
   color: #1b262c;
@@ -54,11 +61,11 @@ body .text span {
   margin: auto;
 }
 
-.main-container .movie-container {
+body .main-container .movie-container {
   margin: 20px 0;
 }
 
-.main-container .movie-container select {
+body .main-container .movie-container select {
   background-color: #f09ae9;
   border: 0;
   border-radius: 5px;
@@ -69,7 +76,7 @@ body .text span {
   appearance: none;
 }
 
-.main-container .showcase {
+body .main-container .showcase {
   background-color: #9399ff;
   color: #f8f8f8;
   border-radius: 5px;
@@ -81,12 +88,12 @@ body .text span {
   padding-right: 0.5rem;
 }
 
-.main-container .showcase div {
+body .main-container .showcase div {
   list-style: none;
   margin: 1rem;
 }
 
-.main-container .showcase div div {
+body .main-container .showcase div div {
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr auto;
@@ -98,57 +105,57 @@ body .text span {
   border-radius: 30%;
 }
 
-.main-container .showcase div div .selected {
+body .main-container .showcase div div .selected {
   background-color: #61d4b3 !important;
   height: 24px;
   width: 30px;
   border-radius: 30%;
 }
 
-.main-container .showcase div div .selected img {
+body .main-container .showcase div div .selected img {
   height: 100%;
   width: 100%;
 }
 
-.main-container .showcase div div .not-select .seat:not(.occupied):hover {
+body .main-container .showcase div div .not-select .seat:not(.occupied):hover {
   cursor: default;
   -webkit-transform: scale(1);
           transform: scale(1);
 }
 
-.main-container .showcase div div :not(.occupied):hover {
+body .main-container .showcase div div :not(.occupied):hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
 }
 
-.main-container .showcase div div .occupied {
+body .main-container .showcase div div .occupied {
   background: #ff80b0 !important;
   height: 24px;
   width: 30px;
   border-radius: 30%;
 }
 
-.main-container .showcase div div .occupied img {
+body .main-container .showcase div div .occupied img {
   height: 100%;
   width: 100%;
 }
 
-.main-container .showcase div div .seat {
+body .main-container .showcase div div .seat {
   background-color: #FFFFFF;
 }
 
-.main-container .showcase div div img {
+body .main-container .showcase div div img {
   height: 100%;
   width: 100%;
 }
 
-.main-container .showcase div small {
+body .main-container .showcase div small {
   margin-top: 2px;
   color: #f8f8f8;
 }
 
-.container {
+body .container {
   -webkit-perspective: 1000px;
           perspective: 1000px;
   margin-bottom: 30px;
@@ -167,7 +174,7 @@ body .text span {
           align-items: center;
 }
 
-.container .screen {
+body .container .screen {
   background: #f7f7f7;
   height: 70px;
   width: 100%;
@@ -178,22 +185,22 @@ body .text span {
           box-shadow: 0 3px 10px rgba(255, 255, 255, 0.7);
 }
 
-.container .row {
+body .container .row {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   width: 100%;
 }
 
-.container .row .selected {
+body .container .row .selected {
   background-color: #61d4b3 !important;
 }
 
-.container .row .occupied {
+body .container .row .occupied {
   background-color: #ff80b0 !important;
 }
 
-.container .row .seat {
+body .container .row .seat {
   background-image: url("seat.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -208,9 +215,29 @@ body .text span {
   padding: 2px;
 }
 
-.container .row :not(.occupied):hover {
+body .container .row :not(.occupied):hover {
   cursor: pointer;
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+}
+
+@media (max-width: 768px) {
+  .main {
+    width: 760px;
+    margin: 0 auto;
+  }
+  .main h1 {
+    font-size: 16px;
+    margin: 0 auto;
+  }
+  .main .main-container {
+    max-width: 90%;
+  }
+  .main .main-container .showcase {
+    width: 100%;
+  }
+  .main .main-container .container {
+    width: 100%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
